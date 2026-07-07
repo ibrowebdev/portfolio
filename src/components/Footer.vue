@@ -4,7 +4,7 @@
       
       <div class="text-center md:text-left">
         <a href="#home" class="text-xl font-bold tracking-tighter text-teal-600 dark:text-teal-400 mb-2 block">
-          Yusuf<span class="text-slate-800 dark:text-white">.dev</span>
+          Ibrohim<span class="text-slate-800 dark:text-white">.dev</span>
         </a>
         <p class="text-slate-500 dark:text-slate-400 text-sm">
           &copy; {{ currentYear }} Yusuf Ibrohim. All rights reserved.

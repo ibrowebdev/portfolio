@@ -7,7 +7,7 @@
       <div class="flex justify-between items-center">
         <!-- Logo -->
         <a href="#home" class="text-2xl font-bold tracking-tighter text-teal-600 dark:text-teal-400">
-          Yusuf<span class="text-slate-800 dark:text-white">.dev</span>
+          Ibrohim<span class="text-slate-800 dark:text-white">.dev</span>
         </a>
 
         <!-- Desktop Menu -->
