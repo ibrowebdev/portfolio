@@ -10,10 +10,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: '[Project Title 2]',
-    description: 'An e-commerce platform with real-time inventory management.',
+    title: 'Dardaa Web',
+    description: 'Dardaa Web is a web agency I developed from scratch using Laravel, Livewire, Alpine.js, Tailwind CSS.',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800',
-    tech: ['Vue 3', 'Laravel', 'PostgreSQL'],
+    tech: ['Laravel', 'Livewire', 'Alpine.js', 'Tailwind CSS'],
     liveUrl: '#',
     githubUrl: '#',
   },
