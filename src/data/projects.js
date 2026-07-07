@@ -5,8 +5,8 @@ export const projects = [
     description: 'DevReport is an AI-powered weekly development progress reporting tool for developers. It connects to your GitHub repositories, analyzes your commits and pull requests within a specified date range, and automatically generates comprehensive, professional weekly reports',
     image: 'https://res.cloudinary.com/denkghkxa/image/upload/v1783435005/screencapture-devreport-site-2026-07-07-15_36_18_v44poc.png',
     tech: ['Vue 3', 'Tailwind', 'Laravel', 'MySQL'],
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://devreport.site',
+    githubUrl: 'https://github.com/ibrowebdev/devreport',
   },
   {
     id: 2,

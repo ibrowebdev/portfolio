@@ -49,11 +49,12 @@
         <div class="lg:w-1/2 flex justify-center lg:justify-end relative" data-aos="fade-left" data-aos-delay="200">
           <div class="relative w-72 h-72 lg:w-96 lg:h-96">
             <div class="absolute inset-0 rounded-full border-2 border-teal-600/30 border-dashed animate-[spin_10s_linear_infinite]"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?auto=format&fit=crop&q=80&w=400&h=400" 
-              alt="Yusuf Ibrohim" 
-              class="rounded-full w-full h-full object-cover p-4 shadow-2xl dark:shadow-teal-900/20"
-            />
+            <div class="rounded-full w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 dark:from-dark-800 dark:to-dark-900 p-12 shadow-2xl dark:shadow-teal-900/20 border-4 border-white dark:border-dark-700 relative overflow-hidden group">
+              <div class="absolute inset-0 bg-teal-500/5 group-hover:bg-teal-500/10 transition-colors duration-500"></div>
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-teal-500/10 blur-2xl rounded-full"></div>
+              <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/10 blur-2xl rounded-full"></div>
+              <Code2 class="w-full h-full text-teal-600 dark:text-teal-400 opacity-80 drop-shadow-sm group-hover:scale-105 transition-transform duration-500" />
+            </div>
             <!-- Decorative badge -->
             <div class="absolute bottom-6 right-6 bg-white dark:bg-dark-800 p-3 rounded-xl shadow-lg border border-slate-100 dark:border-dark-700 animate-bounce">
               <span class="text-2xl">👨‍💻</span>
@@ -66,5 +67,5 @@
 </template>
 
 <script setup>
-import { Github, Linkedin, Mail } from 'lucide-vue-next';
+import { Github, Linkedin, Mail, Code2 } from 'lucide-vue-next';
 </script>
