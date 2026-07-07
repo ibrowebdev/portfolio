@@ -6,7 +6,7 @@ export const projects = [
     image: 'https://res.cloudinary.com/denkghkxa/image/upload/v1783435005/screencapture-devreport-site-2026-07-07-15_36_18_v44poc.png',
     tech: ['Vue 3', 'Tailwind', 'Laravel', 'MySQL'],
     liveUrl: 'https://devreport.site',
-    githubUrl: 'https://github.com/ibrowebdev/devreport',
+    githubUrl: 'https://github.com/ibrowebdev/report',
   },
   {
     id: 2,
