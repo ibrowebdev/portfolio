@@ -64,6 +64,16 @@
                 />
               </div>
             </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Subject</label>
+              <select name="subject" v-model="form.subject" id="" class="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-dark-700 bg-slate-50 dark:bg-dark-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-teal-500 outline-none transition-shadow">
+                <option value="">Select subject</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Project Request">Project Request</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Support">Support</option>
+              </select>
+            </div>
             
             <div>
               <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Message</label>
@@ -105,47 +115,37 @@ import { Mail, MapPin, Send } from 'lucide-vue-next';
 const form = ref({
   name: '',
   email: '',
+  subject: '',
   message: ''
 });
 
 const loading = ref(false);
 const successMsg = ref('');
 
-const submitForm = async () => {
+const submitForm = () => {
   loading.value = true;
   successMsg.value = '';
   
-  // Example of posting to a Laravel backend API route
-  try {
-    /* 
-    // Uncomment when ready to connect to backend
-    const response = await fetch('http://your-laravel-backend.test/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(form.value)
-    });
-    
-    if (response.ok) {
-      successMsg.value = 'Message sent successfully! I will get back to you soon.';
-      form.value = { name: '', email: '', message: '' };
-    } else {
-      alert('Failed to send message.');
-    }
-    */
-    
-    // Mock simulation
-    setTimeout(() => {
-      successMsg.value = 'Message sent successfully! (Mocked response)';
-      form.value = { name: '', email: '', message: '' };
-      loading.value = false;
-    }, 1500);
-    
-  } catch (error) {
-    console.error(error);
+  const { name, email, subject, message } = form.value;
+  
+  // Format the email
+  const mailSubject = subject || 'New Contact from Portfolio';
+  const mailBody = `Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+
+  // Create mailto link and open it
+  const mailtoLink = `mailto:yusufikeolapo2002@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+  window.location.href = mailtoLink;
+  
+  successMsg.value = 'Opening your email client...';
+  
+  setTimeout(() => {
+    form.value = { name: '', email: '', subject: '', message: '' };
     loading.value = false;
-  }
+    successMsg.value = '';
+  }, 2000);
 };
 </script>
