@@ -6,7 +6,7 @@ export const projects = [
     image: 'https://res.cloudinary.com/denkghkxa/image/upload/v1788627467/projects/yh1ftk4gj68flhvbavli.png',
     tech: ['Livewire', 'Alpine.js', 'Tailwind', 'Laravel', 'MySQL'],
     liveUrl: 'https://ajolify.com.ng/',
-    githubUrl: 'https://github.com/ibrowebdev/report',
+    githubUrl: 'https://github.com/',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const projects = [
     image: 'https://res.cloudinary.com/denkghkxa/image/upload/v1783435005/screencapture-devreport-site-2026-07-07-15_36_18_v44poc.png',
     tech: ['Vue 3', 'Tailwind', 'Laravel', 'MySQL'],
     liveUrl: 'https://devreport.site',
-    githubUrl: 'https://github.com/ibrowebdev/report',
+    githubUrl: 'https://github.com/',
   },
   {
     id: 3,
