@@ -22,7 +22,7 @@
             <Sun v-else class="w-5 h-5 text-amber-400" />
           </button>
 
-          <a href="/public/Yusuf-Ibrohim-Resume.pdf" download class="px-5 py-2.5 rounded-lg bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium transition-colors shadow-lg shadow-teal-500/30">
+          <a href="/public/Ibrohim-Yusuf Resume.pdf" download class="px-5 py-2.5 rounded-lg bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium transition-colors shadow-lg shadow-teal-500/30">
             Download CV
           </a>
         </div>
@@ -53,7 +53,7 @@
         >
           {{ link.name }}
         </a>
-        <a href="/public/Yusuf-Ibrohim-Resume.pdf" download class="inline-block text-center w-full px-5 py-3 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-medium transition-colors">
+        <a href="/public/Ibrohim-Yusuf Resume.pdf" download class="inline-block text-center w-full px-5 py-3 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-medium transition-colors">
           Download CV
         </a>
       </div>
