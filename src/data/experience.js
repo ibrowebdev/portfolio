@@ -17,7 +17,7 @@ export const experience = [
     id: 3,
     role: 'Backend Developer (Contract)',
     company: 'LOWPRICEDATA',
-    date: '2024 - 2025',
+    date: '2023 - 2025',
     description: '\n— Worked on the backend of the website using PHP, where I successfully integrated third-party API services for selling airtime, data, electricity payments, and cable subscriptions. <br/> \n— Optimized RESTful APIs for data-driven applications, ensuring seamless interaction between the frontend and backend.',
   },
   {
